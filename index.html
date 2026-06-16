@@ -177,6 +177,7 @@ h1{
   word-break:break-word;
   overflow-wrap:anywhere;
 }
+
     
 
     @media (max-width:768px){
@@ -459,6 +460,8 @@ body{
 
 <body>
 
+  
+
   <section class="hero">
 
     <h1>Насосная станция</h1>
@@ -466,7 +469,8 @@ body{
     <div class="layout">
 
   <div class="side-menu">
-    
+
+    <button onclick="showPart(event)">
 
     <button onclick="showPart('pump')">
       Насос
@@ -696,7 +700,9 @@ const parts = {
 }; 
 
   
-function showPart(name){
+  
+function showPart(event) {
+    console.log(event.target);
 
   const model = document.querySelector("#model");
 
