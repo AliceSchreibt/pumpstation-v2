@@ -696,18 +696,17 @@ const parts = {
 
 function showPart(name){
 
-  const model = document.querySelector("#model");
+  const model =
+  document.querySelector("model-viewer");
 
-  console.log("до:", model.cameraOrbit);
+  model.cameraTarget =
+  parts[name].target;
 
-  model.cameraTarget = parts[name].target;
-  model.cameraOrbit = parts[name].orbit;
-
-  setTimeout(()=>{
-    console.log("после:", model.cameraOrbit);
-  },1000);
+  model.cameraOrbit =
+  parts[name].orbit;
 
 }
+
 
 </script>
 
