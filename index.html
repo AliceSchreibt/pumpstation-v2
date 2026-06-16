@@ -701,7 +701,12 @@ const parts = {
 
 
   
-function showPart(name){
+function showPart(name) {
+
+  if (!parts[name]) {
+    console.error(`Элемент "${name}" не найден в parts`);
+    return;
+  }
 
   const model = document.querySelector("#model");
 
@@ -709,11 +714,7 @@ function showPart(name){
 
   model.cameraTarget = parts[name].target;
   model.cameraOrbit = parts[name].orbit;
-
 }
-
-
-  
 
 
 </script>
