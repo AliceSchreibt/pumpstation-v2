@@ -694,18 +694,20 @@ const parts = {
 
 }; 
 
-
-  function showPart(name){
+function showPart(name){
 
   const model = document.querySelector("#model");
 
-  model.removeAttribute("auto-rotate");
+  console.log("до:", model.cameraOrbit);
 
   model.cameraTarget = parts[name].target;
   model.cameraOrbit = parts[name].orbit;
 
+  setTimeout(()=>{
+    console.log("после:", model.cameraOrbit);
+  },1000);
+
 }
-  
 
 </script>
 
