@@ -22,6 +22,7 @@
 
 
 
+    
 .layout{
   display:flex;
   gap:30px;
@@ -694,16 +695,15 @@ const parts = {
 
 }; 
 
+  
 function showPart(name){
 
-  const model =
-  document.querySelector("model-viewer");
+  const model = document.querySelector("#model");
 
-  model.cameraTarget =
-  parts[name].target;
+  model.removeAttribute("auto-rotate");
 
-  model.cameraOrbit =
-  parts[name].orbit;
+  model.cameraTarget = parts[name].target;
+  model.cameraOrbit = parts[name].orbit;
 
 }
 
