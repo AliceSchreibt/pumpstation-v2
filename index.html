@@ -520,6 +520,112 @@ body{
 
     <h1>Насосная станция</h1>
 
+
+<div class="main-layout">
+
+  <div class="top-menu">
+
+    <button onclick="showPart('pump')">Насос</button>
+
+    <button onclick="showPart('heat')">Теплообменник</button>
+
+    <button onclick="showPart('valve')">Задвижка</button>
+
+  </div>
+
+  <div class="viewer-panel">
+
+    <model-viewer
+      id="model"
+      src="stantion.glb"
+      camera-controls
+      shadow-intensity="1"
+      exposure="1">
+
+      <!-- сюда перенести все hotspot -->
+
+   <button 
+      class="hotspot"
+      slot="hotspot-1"
+      data-position="1.1283486748831142m -1.9800000001899916m -0.03315082394123875m" 
+      onclick="window.open('/public/docs/блок нагрева пропиленгликоля.PNG')"
+      data-normal="4.440892098500626e-16m -1m -2.189528850507527e-47m"
+      data-visibility-attribute="visible">
+    <div class="HotspotAnnotation">Блок нагрева пропиленгликоля</div>
+    </button>
+   
+  <button
+    class="hotspot" 
+    slot="hotspot-2" 
+    data-position="0.9044743787582423m -0.3018590642862913m -0.31035173275589983m"
+    onclick="window.open('https://www.vseinstrumenti.ru/product/monoblochnyj-flantsevyj-nasosnyj-agregat-purity-pstc-80-160-220-n-100588160-13219957/')"
+    data-normal="-1.0950281856927998e-16m -0.14904314688415032m -0.9888306934793588m" 
+    data-visibility-attribute="visible">
+    <div class="HotspotAnnotation">Насос 1</div>
+    </button>
+   
+  <button class="hotspot" slot="hotspot-3" 
+    data-position="0.05186868880615769m -1.3270644231898143m -0.332118674902295m"
+    onclick="window.open('pump.pdf')"
+    data-normal="-0.9438832789844448m 0m -0.33027920863047533m" 
+    data-visibility-attribute="visible">
+    <div class="HotspotAnnotation">Теплообменник</div>
+    </button>
+
+<button 
+class="hotspot" 
+slot="hotspot-4"
+    data-position="-0.15430411993346027m -1.0660000000521546m -0.03372403759545767m"
+    onclick="window.open('/public/docs/65.04.06.01.00 Рама в сборе.PDF')"
+    data-normal="0m -1m 0m" 
+    data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Рама</div>
+    </button>
+
+<button 
+class="hotspot" 
+slot="hotspot-5" 
+data-position="0.6528207413921805m -0.9331868689235174m -0.241377208130434m" 
+onclick="window.open('https://www.vseinstrumenti.ru/product/tsentrobezhnyj-monoblochnyj-nasos-leo-xst-50-160-55-5-5-kvt-380v-qmax-72-0-m3h-hmax-32-m-1336-11262770/')"
+data-normal="-0.5992780421357784m -4.909502399686929e-14m -0.8005409597352958m"
+data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Насос 2</div>
+    </button>
+
+
+
+<button 
+class="hotspot" 
+slot="hotspot-6" 
+data-position="1.6636530250896366m -2.7391758673686364m 0.1926716904675223m" 
+onclick="window.open('/gallery/supps.html')"
+data-normal="-0.14342159226067125m -0.6026885104386266m -0.7849820419975755m" 
+data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Опора </div>
+    </button>
+
+<button 
+class="hotspot" 
+slot="hotspot-7" 
+data-position="1.7084999996646886m -2.2481930687485887m -0.39936833795782223m" 
+onclick="window.open('https://civilizationzti.ru/product/zatvor-diskovyj-povorotnyj-tecofi-vp-3448-du200-ru16-mezhflancevyj/')"
+data-normal="1m -1.6653345369409055e-16m -3.9252311467080943e-16m" 
+data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Дисковая задвижка</div>
+    </button>
+   
+   
+    <div class="progress-bar hide" slot="progress-bar">
+    <div class="update-bar"></div>
+    </div>
+
+      
+    </model-viewer>
+
+  </div>
+
+</div>
+    
     <div class="layout">
 
   <div class="side-menu">
