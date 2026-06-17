@@ -34,19 +34,22 @@ body {
 
 .main-layout{
   display:flex;
+  
   gap:40px;
   align-items:flex-start;
 }
 
 .viewer-panel{
-  width:900px;
+  width:100%;
   height:700px;
+  margin-top:30px;
 }
 
 .viewer-panel 
-  model-viewer{
+ model-viewer{
   width:100%;
   height:100%;
+  background:transparent;
 }
 
     
@@ -583,10 +586,15 @@ body{
 
   <section class="hero">
 
-  <!--  <h1>Насосная станция</h1>
+<h1>Насосная станция</h1>
 
-
-<div class="main-layout">
+<a class="passport-btn"
+   href="/public/docs/схема Эскимогенератор чая .pdf"
+   target="_blank">
+   Скачать паспорт
+</a>
+    
+  <!--  <div class="main-layout">
 
   <div class="side-menu">
 
